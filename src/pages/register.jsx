@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { useQuery, useMutation } from "@tanstack/react-query";
 
+
 import axiosClient from "../api/axiosclient";
 
 import purplestar from "../assets/svgs/purplestar.svg";
@@ -43,7 +44,7 @@ export default function Register() {
   const {
     mutate,
     isLoading: teamIsLoading,
-    isSuccess: teamIsSuccess
+    isSuccess: teamIsSuccess,
   } = useMutation({
     mutationFn: (newTeam) => {
       return axiosClient.post("/hackathon/registration", newTeam);

@@ -33,6 +33,8 @@ export default function Rewards() {
           className="absolute -top-10 left-[30%] w-4"
         />
         <img src={star} alt="" className="absolute bottom-0 left-[25%] w-3" />
+
+
         <div className="hidden flex-col gap-3 ham:flex">
           <h3 className="relative flex flex-col font-clashbold text-[28px] leading-tight ham:text-center ham:text-[28px] sm:text-[20px] ">
             <span className="">Prizes and</span>{" "}
@@ -45,17 +47,17 @@ export default function Rewards() {
         <img
           src={trophy}
           alt=""
-          className="w-[30rem] blend:w-[24rem] ham:w-[20rem] ham:self-center"
+          className="w-[30rem] min-w-[30rem] blend:w-[24rem] blend:min-w-[24rem] ham:w-[20rem] ham:min-w-[20rem] ham:self-center"
         />
       </div>
 
       <div className="flex flex-col gap-7 ham:w-[70%] ham:items-center md:w-full">
         <div className="flex flex-col gap-3 ham:hidden">
-          <h3 className="relative flex flex-col font-clashbold text-[28px] leading-tight ham:text-center ham:text-[28px] sm:text-[20px] ">
+          <h3 className="relative flex flex-col text-start font-clashbold text-[28px] leading-tight ham:text-[28px] sm:text-[20px] ">
             <span className="">Prizes and</span>{" "}
             <span className="text-[#D434FE]">Rewards</span>
           </h3>
-          <p className="text-center font-montserrat text-sm">
+          <p className="text-start font-montserrat text-sm">
             Highlight of the prizes or rewards for winners and for participants.
           </p>
         </div>

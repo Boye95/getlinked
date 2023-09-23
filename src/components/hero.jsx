@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import { motion as m } from "framer-motion";
 
 import underline from "../assets/svgs/underline.svg";
 import chain from "../assets/webps/chain.png";
@@ -45,7 +46,6 @@ export default function Hero() {
     }, 1000);
   }, []);
 
-
   return (
     <div className="relative flex w-full flex-col border-b border-[#ffffff2d] px-32 pt-3 text-white bxl:px-20 xl:px-16 ham:gap-16 ham:pt-8 xs:px-8">
       <img
@@ -62,11 +62,19 @@ export default function Hero() {
         <span className="">Igniting a Revolution in</span>{" "}
         <span className="relative">
           HR Innovation
-          <img src={underline} alt="" className="absolute -bottom-3 left-0 xs:left-1/2 xs:w-[8rem] xs:-translate-x-1/2" />
+          <img
+            src={underline}
+            alt=""
+            className="absolute -bottom-3 left-0 xs:left-1/2 xs:w-[8rem] xs:-translate-x-1/2"
+          />
         </span>
       </h2>
       <div className="relative flex items-center ham:flex-col ">
-        <img src={star} alt="" className="absolute left-10 top-0 w-5 xs:-top-6 xs:left-[80%] xs:w-3 xs:opacity-30 xss:left-[95%] " />
+        <img
+          src={star}
+          alt=""
+          className="absolute left-10 top-0 w-5 xs:-top-6 xs:left-[80%] xs:w-3 xs:opacity-30 xss:left-[95%] "
+        />
         <img
           src={star}
           alt=""
@@ -94,8 +102,40 @@ export default function Hero() {
               <span className="">Hackathon</span>{" "}
               <span className="text-[#D434FE]">1.0</span>
               <div className="ml-2 flex items-center">
-                <img src={chain} alt="" className="h-12 w-12 xs:h-8 xs:w-8" />
-                <img src={spark} alt="" className="h-12 w-12 xs:h-8 xs:w-8" />
+                <m.img
+                  src={chain}
+                  alt=""
+                  className="h-12 w-12 xs:h-8 xs:w-8"
+                  initial={{
+                    y: -5,
+                  }}
+                  animate={{
+                    y: 5,
+                  }}
+                  transition={{
+                    duration: 2,
+                    ease: "linear",
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                  }}
+                />
+                <m.img
+                  src={spark}
+                  alt=""
+                  className="h-12 w-12 xs:h-8 xs:w-8"
+                  initial={{
+                    y: -5,
+                  }}
+                  animate={{
+                    y: 5,
+                  }}
+                  transition={{
+                    duration: 2,
+                    ease: "linear",
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                  }}
+                />
               </div>
             </div>
           </div>

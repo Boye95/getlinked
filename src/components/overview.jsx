@@ -7,6 +7,8 @@ import ladysitting from "../assets/webps/ladysitting.webp";
 import star from "../assets/svgs/star.svg";
 import judges from "../assets/webps/judges.webp";
 
+// import { motion as m } from "framer-motion";
+
 import purpleflareoverview from "../assets/webps/purpleflareoverview.webp";
 
 export default function Overview() {
