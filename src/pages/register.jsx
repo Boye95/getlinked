@@ -7,9 +7,9 @@ import axiosClient from "../api/axiosclient";
 import purplestar from "../assets/svgs/purplestar.svg";
 import star from "../assets/svgs/star.svg";
 
-import mansitting from "../assets/webps/mansitting.png";
+import mansitting from "../assets/webps/mansitting.webp";
 
-import purpleflare from "../assets/webps/purpleflare.png";
+import purpleflare from "../assets/webps/purpleflare.webp";
 
 import ladyman from "../assets/webps/ladyman.png";
 

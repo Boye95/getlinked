@@ -8,7 +8,7 @@ import winwise from "../assets/logos/winwise.png";
 import star from "../assets/svgs/star.svg";
 import purplestar from "../assets/svgs/purplestar.svg";
 
-import purpleflareoverview from "../assets/webps/purpleflareoverview.png";
+import purpleflareoverview from "../assets/webps/purpleflareoverview.webp";
 
 export default function Sponsors() {
   return (

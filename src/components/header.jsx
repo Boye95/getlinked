@@ -57,7 +57,7 @@ export default function Header() {
           <span className="text-[#D434FE]">linked</span>
         </Link>
       </div>
-      <button className="hidden ham:flex" onClick={handleClick} >
+      <button className="hidden items-center ham:flex" onClick={handleClick} >
         <img src={hamopen} alt="" className="" />
       </button>
       <div className="flex w-[55%] items-center justify-between font-montserrat font-normal text-white xl:gap-5 blend:w-full blend:justify-end ham:hidden ">

@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 import underline from "../assets/svgs/underline.svg";
 import chain from "../assets/webps/chain.png";
 import spark from "../assets/webps/spark.png";
-import manhero from "../assets/webps/manhero.png";
+import manhero from "../assets/webps/manhero.webp";
 import star from "../assets/svgs/star.svg";
 import bulb from "../assets/webps/bulb.png";
-import purpleflarehome from "../assets/webps/purpleflarehome.png";
+import purpleflarehome from "../assets/webps/purpleflarehome.webp";
 
 export default function Hero() {
   const [hour, setHour] = useState("00");

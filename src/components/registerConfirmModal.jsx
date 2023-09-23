@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import mansuccess from "../assets/webps/mansuccess.png";
+import mansuccess from "../assets/webps/mansuccess.webp";
 
 import purplestar from "../assets/svgs/purplestar.svg";
 

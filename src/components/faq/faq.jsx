@@ -1,6 +1,6 @@
 import FAQItem from "./FAQItem";
 
-import manthinking from "../../assets/webps/manthinking.png";
+import manthinking from "../../assets/webps/manthinking.webp";
 
 const faqitems = [
   {

@@ -1,10 +1,10 @@
-import humankey from "../assets/webps/humankey.png";
+import humankey from "../assets/webps/humankey.webp";
 import checkmark from "../assets/svgs/check.svg";
 
 import purplestar from "../assets/svgs/purplestar.svg";
 import star from "../assets/svgs/star.svg";
 
-import purpleflareoverview from "../assets/webps/purpleflareoverview.png";
+import purpleflareoverview from "../assets/webps/purpleflareoverview.webp";
 
 export default function Privacy() {
   return (

@@ -13,7 +13,7 @@ import linkedin from "../assets/svgs/linkedin.svg";
 import x from "../assets/svgs/x.svg";
 import back from "../assets/svgs/back.svg";
 
-import purpleflare from "../assets/webps/purpleflare.png";
+import purpleflare from "../assets/webps/purpleflare.webp";
 
 import RegisterConfirmModal from "../components/registerConfirmModal";
 

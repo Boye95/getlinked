@@ -38,9 +38,6 @@ export default {
         clashregular: ["ClashDisplayRegular", "sans-serif"],
         clashsemibold: ["ClashDisplaySemiBold", "sans-serif"],
       },
-      backgroundImage: {
-        "reward-pattern": "url('./src/assets/webps/rewardbgoverlay.png')",
-      },
       listStyleImage: {
         checkmark: 'url("./src/assets/svgs/check.svg")',
       },

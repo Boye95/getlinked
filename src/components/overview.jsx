@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import purplestar from "../assets/svgs/purplestar.svg";
 import bigidea from "../assets/webps/bigidea.png";
 import arrow from "../assets/webps/arrow.png";
-import ladysitting from "../assets/webps/ladysitting.png";
+import ladysitting from "../assets/webps/ladysitting.webp";
 import star from "../assets/svgs/star.svg";
-import judges from "../assets/webps/judges.png";
+import judges from "../assets/webps/judges.webp";
 
-import purpleflareoverview from "../assets/webps/purpleflareoverview.png";
+import purpleflareoverview from "../assets/webps/purpleflareoverview.webp";
 
 export default function Overview() {
   return (

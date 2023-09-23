@@ -1,12 +1,12 @@
-import trophy from "../assets/webps/trophy.png";
+import trophy from "../assets/webps/trophy.webp";
 import silver from "../assets/webps/silver.png";
-import gold from "../assets/webps/gold.png";
+import gold from "../assets/webps/gold.webp";
 import bronze from "../assets/webps/bronze.png";
 
 import purplestar from "../assets/svgs/purplestar.svg";
 import star from "../assets/svgs/star.svg";
 
-import purpleflareoverview from "../assets/webps/purpleflareoverview.png";
+import purpleflareoverview from "../assets/webps/purpleflareoverview.webp";
 
 export default function Rewards() {
   return (
