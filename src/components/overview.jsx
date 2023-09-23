@@ -7,7 +7,7 @@ import ladysitting from "../assets/webps/ladysitting.webp";
 import star from "../assets/svgs/star.svg";
 import judges from "../assets/webps/judges.webp";
 
-// import { motion as m } from "framer-motion";
+import { motion as m } from "framer-motion";
 
 import purpleflareoverview from "../assets/webps/purpleflareoverview.webp";
 
@@ -47,7 +47,7 @@ export default function Overview() {
         </div>
       </div>
 
-      <div className="relative flex items-center justify-between px-32 py-4 text-white bxl:px-20 xl:px-14 ham:flex-col-reverse ham:gap-10 xs:px-8 ">
+      <div className="relative flex items-center justify-between px-32 py-4 text-white bxl:px-20 xl:px-14 ham:flex-col-reverse ham:gap-10 ham:py-12 xs:px-8 ">
         <img
           src={purpleflareoverview}
           alt=""
@@ -79,10 +79,22 @@ export default function Overview() {
           </p>
         </div>
         <div className="relative flex w-1/2 justify-end  ham:flex ham:w-full ham:justify-center">
-          <img
+          <m.img
             src={ladysitting}
             alt=""
             className="relative  w-[35rem] blend:w-[24rem]"
+            initial={{
+              y: -5,
+            }}
+            animate={{
+              y: 5,
+            }}
+            transition={{
+              duration: 2,
+              ease: "linear",
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
           />
         </div>
       </div>
@@ -99,15 +111,27 @@ export default function Overview() {
           className="absolute -bottom-[15rem] -right-[24rem] z-0 w-[50rem] rotate-180 ham:-bottom-[3rem] ham:-right-[10rem]"
         />
         <div className="w-1/2 ham:relative ham:flex ham:w-full ham:justify-center ">
-        <img
-          src={purpleflareoverview}
-          alt=""
-          className=" absolute -left-16 top-16 z-0 hidden w-[50rem] ham:flex"
-        />
           <img
+            src={purpleflareoverview}
+            alt=""
+            className=" absolute -left-16 top-16 z-0 hidden w-[50rem] ham:flex"
+          />
+          <m.img
             src={judges}
             alt=""
             className="relative w-[35rem] blend:w-[24rem]"
+            initial={{
+              y: -5,
+            }}
+            animate={{
+              y: 5,
+            }}
+            transition={{
+              duration: 2,
+              ease: "linear",
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
           />
         </div>
         <div className="flex w-1/2 flex-col gap-4  ham:w-[70%] xs:w-full">

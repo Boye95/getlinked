@@ -2,6 +2,9 @@ import FAQItem from "./FAQItem";
 
 import manthinking from "../../assets/webps/manthinking.webp";
 
+import { motion as m } from "framer-motion";
+
+
 const faqitems = [
   {
     id: 1,
@@ -37,7 +40,10 @@ const faqitems = [
 
 export default function Faq() {
   return (
-    <div id="faqs" className="flex items-center justify-center border-b border-[#ffffff2d] px-32 py-12 text-white bxl:px-20 xl:px-14 ham:flex-col ham:gap-16 xs:px-8 ">
+    <div
+      id="faqs"
+      className="flex items-center justify-center border-b border-[#ffffff2d] px-32 py-12 text-white bxl:px-20 xl:px-14 ham:flex-col ham:gap-16 xs:px-8 "
+    >
       <div className="flex w-2/5 flex-col gap-4 ham:w-[70%] xs:w-full">
         <div className="flex flex-col gap-4">
           <h3 className="relative flex flex-col font-clashbold text-[32px] leading-tight ham:text-center ham:text-[28px] sm:text-[20px] ">
@@ -58,7 +64,23 @@ export default function Faq() {
         </div>
       </div>
       <div className="flex w-1/2 justify-end ham:flex ham:w-full ham:justify-center ">
-        <img src={manthinking} alt="" className="w-[35rem] blend:w-[24rem]" />
+        <m.img
+          src={manthinking}
+          alt=""
+          className="w-[35rem] blend:w-[24rem]"
+          initial={{
+            y: -5,
+          }}
+          animate={{
+            y: 5,
+          }}
+          transition={{
+            duration: 2,
+            ease: "linear",
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+        />
       </div>
     </div>
   );

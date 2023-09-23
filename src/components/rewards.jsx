@@ -7,6 +7,7 @@ import purplestar from "../assets/svgs/purplestar.svg";
 import star from "../assets/svgs/star.svg";
 
 import purpleflareoverview from "../assets/webps/purpleflareoverview.webp";
+import { motion as m } from "framer-motion";
 
 export default function Rewards() {
   return (
@@ -34,7 +35,6 @@ export default function Rewards() {
         />
         <img src={star} alt="" className="absolute bottom-0 left-[25%] w-3" />
 
-
         <div className="hidden flex-col gap-3 ham:flex">
           <h3 className="relative flex flex-col font-clashbold text-[28px] leading-tight ham:text-center ham:text-[28px] sm:text-[20px] ">
             <span className="">Prizes and</span>{" "}
@@ -44,10 +44,22 @@ export default function Rewards() {
             Highlight of the prizes or rewards for winners and for participants.
           </p>
         </div>
-        <img
+        <m.img
           src={trophy}
           alt=""
           className="w-[30rem] min-w-[30rem] blend:w-[24rem] blend:min-w-[24rem] ham:w-[20rem] ham:min-w-[20rem] ham:self-center"
+          initial={{
+            y: -5,
+          }}
+          animate={{
+            y: 5,
+          }}
+          transition={{
+            duration: 2,
+            ease: "linear",
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
         />
       </div>
 
