@@ -30,12 +30,19 @@ export default {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
         unica: ["Unica One", "cursive"],
+        inter: ["Inter", "sans-serif"],
         clashbold: ["ClashDisplayBold", "sans-serif"],
         clashextralight: ["ClashDisplayExtraLight", "sans-serif"],
         clashlight: ["ClashDisplayLight", "sans-serif"],
         clashmedium: ["ClashDisplayMedium", "sans-serif"],
         clashregular: ["ClashDisplayRegular", "sans-serif"],
         clashsemibold: ["ClashDisplaySemiBold", "sans-serif"],
+      },
+      backgroundImage: {
+        "reward-pattern": "url('./src/assets/webps/rewardbgoverlay.png')",
+      },
+      listStyleImage: {
+        checkmark: 'url("./src/assets/svgs/check.svg")',
       },
     },
   },

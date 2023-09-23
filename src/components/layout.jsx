@@ -1,13 +1,11 @@
 import { Outlet } from "react-router-dom";
 import Header from "./header";
-import Footer from "./footer";
 
 export default function Layout() {
   return (
-    <div className="bg-[#150E28] w-full">
+    <div className="relative w-full overflow-hidden bg-[#150E28]">
       <Header />
       <Outlet />
-      <Footer />
     </div>
   );
 }

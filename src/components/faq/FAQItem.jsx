@@ -13,10 +13,10 @@ export default function FAQItem({ item }) {
       key={item.id}
     >
       <div
-        className="flex font-montserrat justify-between"
+        className="flex justify-between font-montserrat"
         onClick={() => setIsActive(!isActive)}
       >
-        <h3 className="text-[14px] ">{item.question}</h3>
+        <h3 className="text-sm ">{item.question}</h3>
         <motion.img
           animate={{ rotate: isActive ? 180 : 0 }}
           transition={{ duration: 0.5 }}
